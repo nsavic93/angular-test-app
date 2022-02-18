@@ -1,0 +1,57 @@
+<div class="table-body-component">
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>SSN</th>
+        <th>DOB</th>
+        <th>Hired</th>
+        <th>CDL#</th>
+        <th>State</th>
+        <th>CDL exp.</th>
+        <th>Medical exp.</th>
+        <th>Mvr exp.</th>
+        <th>Edit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of data" [ngClass]="{'background': user.checked==true}">
+        <td><input type="checkbox"  [checked]="user.checked" (change)="chekChanged(user.checked , user.id)"/></td>
+        <td>
+          {{ user.name }}
+        </td>
+        <td>
+          {{ user.phone }}
+        </td>
+        <td>
+          {{ user.ssn }}
+        </td>
+        <td>
+          {{ user.dob }}
+        </td>
+        <td>
+          {{ user.hired }}
+        </td>
+        <td>
+          {{ user.cdl }}
+        </td>
+        <td>
+          {{ user.state }}
+        </td>
+        <td>
+          {{ user.cdlexp }}
+        </td>
+        <td>
+          {{ user.medicalExp }}
+        </td>
+        <td>
+          {{ user.mvrExp }}
+        </td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  {{checked}}
+</div>

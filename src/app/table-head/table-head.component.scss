@@ -1,0 +1,19 @@
+.table-head-thead {
+  width: 100%;
+}
+.table-head-thead table {
+  width: 100%;
+}
+.table-head-input {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+}
+
+.table-head-input input {
+  width: 90%;
+}
+.table-head-input button {
+  width: 10%;
+}
