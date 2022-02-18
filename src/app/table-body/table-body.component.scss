@@ -1,10 +1,69 @@
 .table-body-component {
-    width: 100%;
+  width: 100%;
 }
-.table-body-component table{
-    width: 100%;
-    border: none;
+.table-body-component table {
+  width: 100%;
+  border: none;
+  border-collapse: collapse;
+  text-align: left;
+}
+.table {
+  border-collapse: separate;
+  border-spacing: 0 1em;
+  font-size: 15px;
+  position: relative;
+}
+.table,
+.table th,
+.table td {
+  // padding: 5px;
+}
+.table-head {
 }
 .background {
-    background-color: grey;
+  background-color: #ced4da !important;
+}
+.checked-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.checked-number span {
+  background-color: #277da1;
+  width: 100%;
+  text-align: center;
+  color: white;
+  border-radius: 4px;
+}
+.table-row {
+  border-radius: 5px;
+  background-color: white;
+  border: 2px solid #ebecee;
+
+  border-radius: 2px;
+}
+.table-row:hover {
+  background-color: #dde2e7;
+  cursor: pointer;
+}
+.state-img {
+  width: 50px;
+}
+.user-img {
+  width: 25px;
+}
+.user-name {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.user-name-img {
+  padding: 5%;
+  display: flex;
+  align-items: center;
+}
+.tollbar {
+  position: absolute;
+    right: 20px;
+    top: 30px
 }

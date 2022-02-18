@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+
 import { DataService } from '../services/data.service';
 
 @Component({
@@ -9,11 +10,13 @@ import { DataService } from '../services/data.service';
 export class TableBodyComponent implements OnInit {
   @Input() data;
   constructor(private dataService: DataService) {}
-  checked=0;
+  editBoolean = false;
+  checked = 0;
   ngOnInit(): void {}
-  chekChanged(checked,id) {
-    
-     this.checked=  this.dataService.changeCkeckValue(checked ,id)
-    
+  openEdit() {
+    this.editBoolean = true;
+  }
+  chekChanged(checked, id) {
+    this.checked = this.dataService.changeCkeckValue(checked, id);
   }
 }

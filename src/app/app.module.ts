@@ -8,6 +8,7 @@ import { TableHeadComponent } from './table-head/table-head.component';
 import { TableBodyComponent } from './table-body/table-body.component';
 import { DataService } from './services/data.service';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,8 @@ import { DataService } from './services/data.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

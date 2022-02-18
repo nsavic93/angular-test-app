@@ -1,0 +1,12 @@
+.tollbar-component {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    z-index: 5;
+    border: 1px solid rgb(226, 224, 224);
+    border-radius: 5px;
+}
+.tollbar-option i{
+    margin-right: 5px;
+    padding: 5px;
+}

@@ -1,5 +1,6 @@
 .table-head-thead {
   width: 100%;
+ 
 }
 .table-head-thead table {
   width: 100%;
@@ -9,11 +10,18 @@
   display: flex;
   flex-wrap: nowrap;
   box-sizing: border-box;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  margin-top: 100px;
+  padding-top: 5px;
 }
 
 .table-head-input input {
-  width: 90%;
+  width: 92%;
 }
 .table-head-input button {
-  width: 10%;
+  width: 3%;
+  border-radius: 3px;
+  background-color: white;
+  border: 1px solid #dee2e6;
 }
